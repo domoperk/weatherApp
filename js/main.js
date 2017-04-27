@@ -20,7 +20,7 @@ $(document).ready(function() {
         // Getting the current weather by zip
         this.getCurrent = function(zip) {
             // URL for weather by zip using imperial units
-            let URL ="http://api.openweathermap.org/data/2.5/weather?zip=" + zip + ",us&units=imperial&APPID=" + this.apiKey; 
+            let URL ="https://api.openweathermap.org/data/2.5/weather?zip=" + zip + ",us&units=imperial&APPID=" + this.apiKey; 
 
             // Http request
             http.open('GET', URL, false);
